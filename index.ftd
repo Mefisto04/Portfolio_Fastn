@@ -1,0 +1,176 @@
+;; -- ftd.document:
+;; og-title: My Page Title
+
+-- ftd.text:
+text-align: center
+width.fixed.percent: 100
+padding.px: 20
+region: h2
+background.solid: #181616
+color: white
+
+Hola Guyz !!
+
+
+-- ftd.text: It's Mayur Kawale
+style: bold
+text-align: center
+width.fixed.percent: 100
+region: h1
+padding.px: 30
+background.solid: #181616
+color: white
+;; color: $inherited.colors.text
+
+-- ftd.text:
+text-align: center
+width.fixed.percent: 100
+padding-bottom.px: 20
+region: h3
+background.solid: #181616
+color: white
+
+Passionate about Communication, and C++,Python 
+Programming Language with a broad knowledge in computer science principles. 
+Always interested in expanding my knowledge and learning something new everyday. 
+I am always open to hearing about new opportunities
+
+
+-- import: fastn.com/assets
+
+-- ftd.image: dp.png
+alt: Image can't be displayed
+color: $inherited.colors.text
+;; padding.px: 20
+margin.px: 2
+border-radius.px : 100
+margin-left.px: 800
+
+
+
+
+
+
+
+;; -- ftd.row:
+;; spacing.fixed.px: 20
+;; margin-left.px : 530
+
+
+;; -- ftd.text: Front End Developer
+;; region: h2
+
+;; -- ftd.text: Competitive Coder
+;; region: h2
+
+;; -- ftd.text: BlockChain Developer
+;; region: h2
+
+;; -- ftd.text: Tech Enthusiastic
+;; region: h2
+
+
+;; -- end: ftd.row
+
+
+
+-- ftd.color red-blue:
+light: red
+dark: grey
+
+-- ftd.row:
+width: auto
+height.fixed.px: 200
+padding-bottom.px : 230
+color: grey
+
+-- ftd.text: Front End Developer
+region: h3
+left.px: 700
+top.px: 20
+padding.px: 25
+style: bold
+width.fixed.px: 300
+text-align: center
+border-color: $red-blue
+border-width.px: 2
+background.solid: black
+color: white
+z-index: 3 
+anchor: parent
+border-radius.px : 100
+
+-- ftd.text: Competitive Coder
+region: h3
+left.px: 800
+top.px: 80
+padding.px: 25
+text-align: center
+style: bold
+width.fixed.px: 300
+border-color: $red-blue
+border-width.px: 2
+background.solid: black
+color: white
+z-index: 2 
+anchor: parent
+border-radius.px : 100
+
+-- ftd.text: BlockChain Developer
+region: h3
+left.px: 920
+top.px: 130
+style: bold
+padding.px: 25
+text-align: center
+width.fixed.px: 300
+border-color: $red-blue
+border-width.px: 2
+background.solid: black
+color: white
+z-index: 1 
+anchor: parent
+border-radius.px : 100
+
+-- end: ftd.row
+
+
+
+
+-- integer $counter: 0
+
+-- string sample-text:
+
+I am a Competitive Programmer,BlockChain Developer and Front End Developer. 
+I love to work on projects that require me to think outside the box in order to come up with
+
+
+-- ftd.column:
+width: fill-container
+background.solid: #000000
+opacity: 1.0
+opacity if { counter % 4 == 1 }: 0.7
+opacity if { counter % 4 == 2 }: 0.5
+opacity if { counter % 4 == 3 }: 0.2
+
+-- ftd.text: $sample-text
+region: h4
+color: white
+padding.px: 25
+text-align: center
+width.fixed.percent: 100
+
+-- end: ftd.column
+
+-- ftd.text: Click Here
+color: black
+$on-click$: $ftd.increment($a = $counter)
+margin-vertical.px: 10
+padding.px: 10
+margin.px : 20
+border-width.px: 2
+border-radius.px: 30
+align-self: center
+text-align: center
+
+
